@@ -1,0 +1,16 @@
+{
+  "apps" : [{
+    "name" : "yuanningmanageserverServer",
+    "max_memory_restart": "200M",
+    "log_date_format" : "YYYY-MM-DD HH:mm:ss",
+    "merge_logs"      : true,
+    "script" : "/mnt/frontEnd/yuanningManageServer/bin/www",
+    "out_file" : "/mnt/frontEnd/logs/yuanningManageServer_out.log",
+    "error_file": "/mnt/frontEnd/logs/yuanningManageServer_error.log",
+    "cron_restart"     : "1 0 * * *",
+    "instances" : 1,
+    "exec_mode" : "cluster",
+    "watch":false,
+    "env": { "NODE_ENV": "development" }
+  }]
+}

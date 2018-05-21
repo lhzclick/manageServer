@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>灯塔-指引钱途</title>
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="all" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/1.5.6/skins/default/index.css" />
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0e65804a9964ee397105aeb0e6950bb5";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo"></div>
+    <ul id="market" class="index_market">
+    </ul>
+    <div class="side_title"><i class="txt_user_list"></i></div>
+    <div class="online_num">在线人数:<span id="onlineNumb"></span></div>
+    <ul class="online_list" id="onLineMember">
+        <div id="members"></div>
+    </ul>
+
+    <div class="side_title"><i class="txt_teacher_list"></i></div>
+    <ul class="teacher_list">
+        <li><span>徐老师(课程热播)</span><b>1806赞</b></li>
+        <li><span>陈老师(课程热播)</span><b>1590赞</b></li>
+        <li><span>李老师(课程热播)</span><b>1050赞</b></li>
+    </ul>
+    <div class="qcode_img"><img src="images/img_qcode.png" alt=""></div>
+</div>
+
+
+<div class="right_part">
+    <div class="header">
+        <a id="saveDesk" class="btn_save">保存到桌面</a>
+        <a id="nbStockvip" class="btn_vip">牛股vip</a>
+        <a id="nbStocklist" class="btn_pool">牛股池</a>
+        <a id="learnStock" class="btn_teacher_diagnose">老师诊股</a>
+        <div class="teacher_qq">
+            <span>老师助理QQ<i class="ico_arrow_down"></i></span>
+            <ul id="teacherQQ">
+                <li><i class="ico_qq"></i>QQ交谈</li>
+                <li><i class="ico_qq"></i>QQ交谈</li>
+                <li><i class="ico_qq"></i>QQ交谈</li>
+                <li><i class="ico_qq"></i>QQ交谈</li>
+                <li><i class="ico_qq"></i>QQ交谈</li>
+                <li><i class="ico_qq"></i>QQ交谈</li>
+            </ul>
+        </div>
+
+        <div id="login" class="btn_login">登 录</div>
+        <div id="register" class="btn_reg">注册会员</div>
+        <div class="tourist_num" id="loginUserInfo"></div>
+    </div>
+
+    <div class="chat_area">
+
+        <div class="chat_box" id="chatBox">
+            <div id="messages"></div>
+        </div>
+        <div class="send_area">
+            <div class="send_info">涨价概念启动在即，多方已备好子弹，老K带你挖掘逆势涨价龙头！</div>
+            <div id="serviceArea" class="advanced_service">
+                <span>高级服务:</span>
+                <a><i class="ico_qq"></i>老师助理1</a>
+                <a><i class="ico_qq"></i>老师助理2</a>
+                <a><i class="ico_qq"></i>老师助理3</a>
+                <a><i class="ico_qq"></i>老师助理4</a>
+            </div>
+            <div class="send_row">
+                <textarea id="ChatSendMsg" placeholder="发送消息"></textarea>
+                <span id="divSendButton" class="btn_send">发 送</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="video_area">
+        <div class="title_row">
+            <span>视频直播</span>
+            <a id="refresh">刷新</a>
+            <a id="schedulePlane">课程安排</a>
+            <a id="downloadDesk" class="btn_down_to_desktop">下载到桌面</a>
+        </div>
+        <div id="videoDom" class="video"></div>
+        <ul class="tab" id="tab">
+            <li class="on">涨停牛股</li>
+            <li>牛股战绩</li>
+            <li>关于我们</li>
+            <li>免责声明</li>
+        </ul>
+        <div id="tabContentHolder">
+            <div class="tab_content">
+                <a id="adTab1" class="ad"><img src="images/pop_banner.jpg" alt=""></a>
+            </div>
+            <div class="tab_content none">
+                <a id="adTab2" class="ad"><img src="images/ad1.jpg" alt=""></a>
+            </div>
+            <div class="tab_content none">
+                <p>1.资质优势：湖南金证投资咨询顾问有限公司是中国证监会批准的全国第一批获得证券投资咨询业务牌照的专业投顾机构。</p>
+                <p>2.服务优势：曾先后为数百家地方政府、经济主管部门、企业集团、上市公司，提供投资理财等专业服务。</p>
+                <p>3.团队优势：拥有国内顶尖投顾团队—5A级首席投顾军团、SSS级热点挖掘团队。提供一对一咨询指导，助投资者实现超额收益。</p>
+            </div>
+            <div class="tab_content none">
+                <p>1.金股直播发布的资讯仅供参考，不代表金股直播立场。金股直播对文中的观点判断保持中立，对该信息内容的准确性、可靠性或内容的完整性不提供保证。投资者自行参考，据此操作风险自担。</p>
+                <p>2.金股直播分析师发表的言论均代表其个人对于投资市场的观点，问股、互动等行为，仅代表个人观点，不构成任何投资意见，亦不代表金股直播的观点或意见，敬请广大的投资者理性对待，谨慎投资！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-template" id="messageLi">
+    <div class="single_chat <@=data.className@>">
+        <div class="chat_name"><@=data.nickName@><@=data.honour@> [<@=data.time@>]</div>
+        <div class="chat_txt"><@=data.sContent@></div>
+    </div>
+</script>
+
+<script type="text/x-template" id="userLi">
+    <@ for (i=0; i<data.length; i++){ @>
+    <li class="<@=data[i].className@>"><@=data[i].nickName@></li>
+    <@}@>
+</script>
+
+<script type="text/x-template" id="marketLi">
+    <@ for (i=0; i<data.length; i++){ @>
+    <li>
+        <span><@=data[i].sSecName@></span>
+        <span class="<@=data[i].rate.className@>"><@=data[i].rate.fNow@></span>
+        <span class="<@=data[i].rate.className@>"><@=data[i].rate.sRate@></span>
+    </li>
+    <@}@>
+</script>
+
+<div class="pop_box_holder none" id="popLogin">
+    <div class="pop_login">
+        <span class="pop_close"></span>
+        <div class="pop_title">会员登录</div>
+        <div class="input_row"><i class="ico_user"></i><input id="tel" type="text" placeholder="请输入您的手机号"></div>
+        <div class="input_row"><i class="ico_password"></i><input id="pwd" type="password" placeholder="请输入您的密码"></div>
+        <div class="input_submit_row">
+            <span id="loginSend" class="btn_login">登录</span>
+            <span id="registerButton" class="btn_reg">注册</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="pop_box_holder none" id="popSchedule">
+    <div class="pop_schedule">
+        <span class="pop_close"></span>
+        <div class="pop_title">02月22日课程安排</div>
+        <ul class="schedule_list">
+            <li><span>陈丹《涨停早班车》</span><b>直播时间：08:30-09:30</b></li>
+            <li><span>谢东飞《盘中详解析》</span><b>直播时间：09:30-11:30</b></li>
+            <li><span>夏彬《午盘加油站》</span><b>直播时间：11:30-12:30</b></li>
+            <li><span>刘园《机构战法》</span><b>直播时间：12:30-13:00</b></li>
+            <li><span>张威《盘中详解析》</span><b>直播时间：13:00-15:00</b></li>
+            <li class="on"><span>李俊《复盘作业会》</span><b>直播时间：正在直播中</b></li>
+            <li><span>夏彬《个股全诊断》</span><b>直播时间：16:30-18:00</b></li>
+            <li><span>陈玥《资讯灵通报》</span><b>直播时间：18:00-19:00</b></li>
+            <li><span>李俊《股市大学堂》</span><b>直播时间：19:00-20:00</b></li>
+            <li><span>方健《机构战法》</span><b>直播时间：20:00-20:40</b></li>
+            <li><span>陈玥《市场明展望》</span><b>直播时间：20:40-22:00</b></li>
+        </ul>
+    </div>
+</div>
+
+<div class="pop_box_holder none" id="popBanner">
+    <div class="pop_banner">
+        <span class="pop_close"></span>
+        <a><img src="images/pop_banner.jpg" alt=""></a>
+    </div>
+</div>
+
+<div class="pop_box_holder none" id="popBanner2">
+    <div class="pop_banner">
+        <span class="pop_close"></span>
+        <a><img src="images/zg.jpg" alt=""></a>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script type="text/javascript" src="//g.alicdn.com/de/prismplayer/1.5.6/prism-min.js"></script>
+<script src="http://cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+
+<script src="js/xss.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/liveRoom.js"></script>
+<script src="js/livePlay.js"></script>
+<script src="js/rongCloud.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
